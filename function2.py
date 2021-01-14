@@ -6,7 +6,9 @@ Created on Thu Jan 14 16:31:38 2021
 """
 
 def f2(n,r):
-    if n>0 or r>0:
-        return f2(n-1,r) + f2(n-1,r-1)
+    if(n==0):
+        return r
+    elif(r==0):
+       return r
     else:
-        return 0
+        return (f2(n-1,r)+f2(n-1,r-1))
