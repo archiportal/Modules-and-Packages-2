@@ -6,8 +6,7 @@ Created on Thu Jan 14 16:47:43 2021
 """
 
 def f3(n):
-    if n>1:
-        x=f3(n/2)+1
-        return 0    
-    else:
-        return 0
+    if(n==1):
+        return 0  
+    r=f3(n/2)+1
+    return r

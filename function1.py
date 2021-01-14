@@ -6,8 +6,8 @@ Created on Thu Jan 14 16:28:15 2021
 """
 
 def f1(x,y):
-    if x>=y:
-        return (f1(x-y,y)+1)
-    else:
-        return (f1(y-x,x)+1)
+    if y<=x:
+        return int(f1(x-y,y)) + 1
+
+    return 1
     
